@@ -14,6 +14,6 @@ namespace Reseacher
 
         public static string Aurora => $"Engine version : {_aurora}";
 
-        public static string Information => Self + Environment.NewLine + Aurora;
+        public static string Information => $"{Self} | {Aurora}";
     }
 }

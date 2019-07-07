@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Reseacher"
         xmlns:chrome="http://schemes.grabacr.net/winfx/2014/chrome"
 		xmlns:controls="http://schemes.grabacr.net/winfx/2014/controls"
+        xmlns:properties="clr-namespace:Reseacher.Properties"
         mc:Ignorable="d"
         Title="MainWindow"
         Height="450"
@@ -30,37 +31,21 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
-        
-        <local:LogoDrawer x:Name="drawer" Grid.Row="1" Grid.Column="1" />
+
+        <local:LogoDrawer x:Name="drawer" Grid.Row="1" Grid.Column="1" MediaEnded="LogoDrawer_MediaEnded"/>
+        <local:DatabaseState x:Name="state" Grid.Row="1" Grid.Column="0" />
+        <Grid Grid.Row="2" Grid.ColumnSpan="3" Background="Purple"/>
+        <Label x:Name="label_per" 
+               Grid.Row="2"
+               Grid.ColumnSpan="3"
+               Foreground="White" 
+               HorizontalAlignment="Left" />
         <Label x:Name="ver_label"
                Grid.Row="2"
-               Grid.Column="2"
-               HorizontalContentAlignment="Right"
+               Grid.ColumnSpan="3"
                Foreground="White"
-               HorizontalAlignment="Right"
-               VerticalAlignment="Bottom"
-               Margin="0,0,10,10" />
-        <Label x:Name="label_1" 
-               HorizontalAlignment="Left" 
-               VerticalAlignment="Top" 
-               Margin="10,10,0,0" 
-               Foreground="White" 
-               Grid.Row="1" 
-               Content="{Binding BindText1, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
-        <Label x:Name="label_2" 
-               HorizontalAlignment="Left" 
-               VerticalAlignment="Top" 
-               Margin="10,50,0,0" 
-               Foreground="White" 
-               Grid.Row="1" 
-               Content="{Binding BindText2, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
-        <Label x:Name="label_per" 
-               HorizontalAlignment="Left" 
-               VerticalAlignment="Top" 
-               Margin="10,10,0,0" 
-               Foreground="White" 
-               Grid.Row="2" />
+               HorizontalAlignment="Right" />
     </Grid>
 </controls:MetroWindow>

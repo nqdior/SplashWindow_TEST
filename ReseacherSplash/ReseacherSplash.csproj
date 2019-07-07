@@ -72,11 +72,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="MainViewModel.cs" />
-    <Compile Include="LogoDrawer.xaml.cs">
+    <Compile Include="Settings.cs" />
+    <Compile Include="Version.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="View\DatabaseState.xaml.cs">
+      <DependentUpon>DatabaseState.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LogoDrawer.xaml.cs">
       <DependentUpon>LogoDrawer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Version.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -89,9 +93,13 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="LogoDrawer.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="View\DatabaseState.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\LogoDrawer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +131,9 @@
     <Content Include="Resources\loading.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
