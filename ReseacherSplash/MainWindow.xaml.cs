@@ -25,13 +25,13 @@ namespace Reseacher
         {
             for (var i = 0; i <= 100; i++)
             {
-                label_per.Content = "データベース状態確認中... " + await progress(i);
+                label_per.Content = "Checking databases status ... " + await progress(i);
             }
             for (var i = 0; i <= 100; i++)
             {
-                label_per.Content = "メインプロセス起動中 " + await progress(i);
+                label_per.Content = "Awaking main process ... " + await progress(i);
             }
-            label_per.Content = "起動設定完了 システム起動";
+            label_per.Content = "Stand by.";
         }
 
         async Task<string> progress(int percent)
@@ -39,8 +39,9 @@ namespace Reseacher
             await Task.Delay(16);
             return $"{percent}% ";
         }
-
-        private void LogoDrawer_MediaEnded(object sender, RoutedEventArgs e) => Close();
-        
+        private void LogoDrawer_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            ver_label.Content = "";
+        }
     }
 }

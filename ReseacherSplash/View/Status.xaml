@@ -6,6 +6,6 @@
              xmlns:local="clr-namespace:Reseacher"
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="200">
-    <Grid Background="Red">
+    <Grid Background="Transparent">
     </Grid>
 </UserControl>

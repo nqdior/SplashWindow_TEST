@@ -72,14 +72,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Settings.cs" />
+    <Compile Include="Component\Circle.xaml.cs">
+      <DependentUpon>Circle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CircleProgressBar.cs" />
     <Compile Include="Version.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
-    <Compile Include="View\DatabaseState.xaml.cs">
-      <DependentUpon>DatabaseState.xaml</DependentUpon>
+    <Compile Include="View\State.xaml.cs">
+      <DependentUpon>State.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\LogoDrawer.xaml.cs">
-      <DependentUpon>LogoDrawer.xaml</DependentUpon>
+    <Compile Include="View\Status.xaml.cs">
+      <DependentUpon>Status.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Title.xaml.cs">
+      <DependentUpon>Title.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -93,11 +99,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\DatabaseState.xaml">
+    <Page Include="Component\Circle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\State.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Status.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\LogoDrawer.xaml">
+    <Page Include="View\Title.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -132,8 +146,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
