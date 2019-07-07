@@ -18,7 +18,7 @@ namespace Reseacher
         {
             base.OnStartup(e);
             ShutdownMode = ShutdownMode.OnMainWindowClose;
-            ThemeService.Current.Register(this, Theme.Windows, Accent.Purple);
+            ThemeService.Current.Register(this, Theme.Windows, Accent.Blue);
         }
     }
 }

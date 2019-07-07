@@ -12,7 +12,8 @@ namespace Reseacher
             InitializeComponent();
 
             /* ajust logo background color.*/
-            Background = (SolidColorBrush)new BrushConverter().ConvertFrom("#201E1E");
+            underBar.Background = (SolidColorBrush)new BrushConverter().ConvertFrom("#007ACC");
+            Background = Brushes.Black;
         }
 
         private void MetroWindow_Loaded(object sender, RoutedEventArgs e)
@@ -36,12 +37,11 @@ namespace Reseacher
 
         async Task<string> progress(int percent)
         {
-            await Task.Delay(16);
+            await Task.Delay(50);
             return $"{percent}% ";
         }
         private void LogoDrawer_MediaEnded(object sender, RoutedEventArgs e)
         {
-            ver_label.Content = "";
         }
     }
 }

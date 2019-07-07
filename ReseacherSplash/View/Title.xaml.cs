@@ -14,11 +14,10 @@ namespace Reseacher
 
         private void Anime_MediaEnded(object sender, RoutedEventArgs e)
         {
-            /*
             anime.Position = new TimeSpan(0, 0, 1);
             anime.Play();
-            */
-            welcome.Content = "Welcome to 'Reseacher'";
+
+            // welcome.Content = "Welcome to 'Reseacher'";
             MediaEnded(sender, e);
         }
         public delegate void MediaEndedHandler(object sender, RoutedEventArgs e);

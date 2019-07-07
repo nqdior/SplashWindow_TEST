@@ -24,9 +24,9 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="150"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -36,7 +36,7 @@
 
         <local:Title x:Name="drawer" Grid.Row="1" Grid.Column="1" MediaEnded="LogoDrawer_MediaEnded"/>
         <local:DatabaseState x:Name="state" Grid.Row="1" Grid.Column="0" />
-        <Grid Grid.Row="2" Grid.ColumnSpan="3" Background="Purple"/>
+        <Grid x:Name="underBar" Grid.Row="2" Grid.ColumnSpan="3" Background="Purple"/>
         <Label x:Name="label_per" 
                Grid.Row="2"
                Grid.ColumnSpan="3"
