@@ -259,3 +259,5 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/ReseacherSplash/ico/8fa34dabb14629f3fce8dcc0180fb8c0.jpg
+/ReseacherSplash/ico

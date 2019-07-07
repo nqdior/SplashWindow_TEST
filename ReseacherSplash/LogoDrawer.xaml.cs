@@ -20,6 +20,8 @@ namespace ReseacherSplash
     /// </summary>
     public partial class LogoDrawer : UserControl
     {
+        // public string LogoLabel { set => label.Content = value; }
+
         public LogoDrawer()
         {
             InitializeComponent();

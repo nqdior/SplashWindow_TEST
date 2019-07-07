@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MetroRadiance">
       <HintPath>..\..\MetroRadiance\source\MetroRadiance\bin\Release\MetroRadiance.dll</HintPath>
@@ -111,9 +114,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\App.config" />
+    <None Include="Properties\App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\icon.ico" />
     <Content Include="Resources\loading.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

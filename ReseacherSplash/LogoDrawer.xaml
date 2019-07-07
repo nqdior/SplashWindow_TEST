@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:ReseacherSplash"
              mc:Ignorable="d">
     <Grid>
         <MediaElement x:Name="myGif" Source="Resources/loading.gif" LoadedBehavior="Play" UnloadedBehavior="Manual" MediaEnded="MyGif_MediaEnded" Stretch="Fill"/>
