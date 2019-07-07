@@ -1,7 +1,7 @@
-﻿<Application x:Class="ReseacherSplash.App"
+﻿<Application x:Class="Reseacher.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:ReseacherSplash"
+             xmlns:local="clr-namespace:Reseacher"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

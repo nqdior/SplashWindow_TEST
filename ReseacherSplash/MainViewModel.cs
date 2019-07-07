@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReseacherSplash
+namespace Reseacher
 {
     class MainViewModel : INotifyPropertyChanged
     {

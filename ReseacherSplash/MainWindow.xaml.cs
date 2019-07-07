@@ -1,12 +1,13 @@
 ﻿using MetroRadiance.UI;
 using MetroRadiance.UI.Controls;
+using Reseacher.Properties;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
 
-namespace ReseacherSplash
+namespace Reseacher
 {
     /// <summary>
     /// MainWindow.xaml の相互作用ロジック
@@ -28,9 +29,7 @@ namespace ReseacherSplash
 
         private void MetroWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            ver_label.Content = "system version : 0.7.7";
-            ver_label.Content += Environment.NewLine;
-            ver_label.Content += "engine version : 1.0.0";
+            ver_label.Content = Version.Information;
 
             Main();
             Percent();

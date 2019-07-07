@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace ReseacherSplash
+namespace Reseacher
 {
     /// <summary>
     /// App.xaml の相互作用ロジック
@@ -18,7 +18,7 @@ namespace ReseacherSplash
         {
             base.OnStartup(e);
             ShutdownMode = ShutdownMode.OnMainWindowClose;
-            ThemeService.Current.Register(this, Theme.Windows, Accent.Windows);
+            ThemeService.Current.Register(this, Theme.Windows, Accent.Purple);
         }
     }
 }

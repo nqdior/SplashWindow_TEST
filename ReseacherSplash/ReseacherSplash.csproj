@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{53662A9E-5444-4523-8512-49ACE5B2B9FB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ReseacherSplash</RootNamespace>
+    <RootNamespace>Reseacher</RootNamespace>
     <AssemblyName>ReseacherSplash</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -38,6 +38,9 @@
     <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Aurora">
+      <HintPath>..\..\aurora\Aurora\bin\Release\Aurora.dll</HintPath>
+    </Reference>
     <Reference Include="MetroRadiance">
       <HintPath>..\..\MetroRadiance\source\MetroRadiance\bin\Release\MetroRadiance.dll</HintPath>
     </Reference>
@@ -73,6 +76,7 @@
     <Compile Include="LogoDrawer.xaml.cs">
       <DependentUpon>LogoDrawer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Version.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -108,14 +112,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\App.config">
-      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
